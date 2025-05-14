@@ -1,5 +1,9 @@
 # ~/.config/fish/config.fish
 
+eval (direnv hook fish)
+# Ruby Gems
+set -gx GEM_HOME "/home/luhw/.local/share/gem/ruby/3.4.0"
+fish_add_path "$GEM_HOME/bin"
 # ─────────────────────────────────────────────
 # Ensure this runs only in interactive shell
 # ─────────────────────────────────────────────
