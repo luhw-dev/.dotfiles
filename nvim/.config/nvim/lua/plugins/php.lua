@@ -15,7 +15,7 @@ return {
                 },
               },
               format = {
-                enable = false, -- ❌ disable formatting (handled by Pint)
+                enable = false,
               },
             },
           },
