@@ -1,47 +1,44 @@
+@import "./rose-pine.css";
+
 * {
-    font-family: JetbrainsMono Nerd Font;
+    font-family: JetBrainsMono Nerd Font;
     font-size: 14px;
     font-weight: bold;
-    min-height: 0;
-    padding-right: 2px;
-    padding-left: 2px;
-    padding-bottom: 0;
-    padding-top: 0;
     margin: 0;
+    padding: 0 2px;
+    min-height: 0;
 }
 
 #waybar {
-    background: #0d0619;
-    color: #c6d0f5;
+    background: transparent;
     margin: 0 1px;
-    /* remove vertical spacing */
 }
 
 #window {
-    margin-left: 10px;
+    color: @rose;
 }
 
 #workspaces {
-    border-radius: 5px;
-    margin: 0 0 0 1rem;
-    /* only left margin */
-    background: transparent;
+    background: @base;
+    border-radius: 10px;
+    margin-left: 10px;
+    border: 1px solid rgba(255, 255, 255, 0.05);
 }
 
 #workspaces button {
-    color: #babbf1;
-    border-radius: 5px;
+    color: @muted;
+    border-radius: 10px;
     padding: 0.4rem;
 }
 
 #workspaces button.active {
-    color: #99d1db;
-    border-radius: 5px;
+    color: @iris;
 }
 
 #workspaces button:hover {
-    color: #85c1dc;
-    border-radius: 5px;
+    color: @rose;
+    background: transparent;
+    border: none;
 }
 
 #custom-music,
@@ -55,24 +52,29 @@
 #memory,
 #custom-lock,
 #custom-power {
-    background-color: transparent;
+    background: @base;
+    color: @text;
     padding: 0.5rem;
-    margin: 0;
-    /* remove vertical margin */
+    margin-right: 5px;
+    margin-left: 5px;
+    border: 1px solid rgba(255, 255, 255, 0.05);
+    border-radius: 10px;
+}
+
+#cpu,
+#network,
+#clock {
+    color: @text;
 }
 
 #memory {
-    border-radius: 0 5px 5px 0;
-}
-
-#clock {
-    color: #8caaee;
-    border-radius: 5px;
+    color: @foam;
+    border-radius: 10px; 
 }
 
 #battery {
     color: #a6d189;
-    border-radius: 0;
+    border-radius: 10px;
 }
 
 #battery.charging {
@@ -89,32 +91,30 @@
 
 #backlight {
     color: #e5c890;
-    border-radius: 0;
+    border-radius: 10px;
 }
 
 #pulseaudio {
     color: #ea999c;
-    border-radius: 5px 0 0 5%;
+    border-radius: 10px;
 }
 
 #custom-music {
     color: #ca9ee6;
-    border-radius: 5px;
 }
 
 #custom-lock {
-    border-radius: 5px 0 0 5px;
     color: #babbf1;
+    border-radius: 10px;
 }
 
 #custom-power {
-    margin-right: 1rem;
-    border-radius: 0 5px 5px 0;
     color: #e78284;
+    border-radius: 10px;
+    margin-right: 1rem;
 }
 
 #tray {
-    margin-right: 1rem;
-    margin-left: 1rem;
-    border-radius: 5px;
+    margin: 0 1rem;
 }
+
