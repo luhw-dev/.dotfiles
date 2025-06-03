@@ -2,43 +2,46 @@
 
 * {
     font-family: JetBrainsMono Nerd Font;
-    font-size: 14px;
+    font-size: 16px;
     font-weight: bold;
-    margin: 0;
-    padding: 0 2px;
-    min-height: 0;
+    margin: 0px;
+    padding: 0px;
 }
 
 #waybar {
-    background: transparent;
-    margin: 0 1px;
+    background: @base;
+    margin: 0px;
+    padding: 0px;
 }
 
 #window {
     color: @rose;
+    margin-left: 10px;
+    padding: 0px;
 }
 
 #workspaces {
-    background: @base;
-    border-radius: 10px;
-    margin-left: 10px;
+    border-radius: 0px;
+    margin: 0px;
     border: 1px solid rgba(255, 255, 255, 0.05);
 }
 
 #workspaces button {
     color: @muted;
-    border-radius: 10px;
-    padding: 0.4rem;
+    margin: 0px 0px;
+    border-radius: 0px;
 }
 
 #workspaces button.active {
+    background: @overlay;
     color: @iris;
+
 }
 
 #workspaces button:hover {
     color: @rose;
-    background: transparent;
-    border: none;
+    background: @surface;
+
 }
 
 #custom-music,
@@ -54,27 +57,27 @@
 #custom-power {
     background: @base;
     color: @text;
-    padding: 0.5rem;
-    margin-right: 5px;
-    margin-left: 5px;
+    padding-left: 0.5rem;
+    padding-right: 0.5rem;
     border: 1px solid rgba(255, 255, 255, 0.05);
-    border-radius: 10px;
 }
 
-#cpu,
-#network,
+#network.disconnected {
+    color: crimson;
+}
+
 #clock {
     color: @text;
+    border-radius: 0px;
 }
 
 #memory {
     color: @foam;
-    border-radius: 10px; 
 }
 
 #battery {
     color: #a6d189;
-    border-radius: 10px;
+    border-radius: 0px 0px 0px 0px;
 }
 
 #battery.charging {
@@ -91,12 +94,12 @@
 
 #backlight {
     color: #e5c890;
-    border-radius: 10px;
+    border-radius: 0px;
 }
 
 #pulseaudio {
     color: #ea999c;
-    border-radius: 10px;
+    border-radius: 0px 0px 0px 0px;
 }
 
 #custom-music {
@@ -105,16 +108,11 @@
 
 #custom-lock {
     color: #babbf1;
-    border-radius: 10px;
+    border-radius: 0px;
 }
 
 #custom-power {
     color: #e78284;
-    border-radius: 10px;
+    border-radius: 0px;
     margin-right: 1rem;
 }
-
-#tray {
-    margin: 0 1rem;
-}
-

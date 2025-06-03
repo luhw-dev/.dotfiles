@@ -61,16 +61,16 @@ set -gx FZF_CTRL_T_OPTS "
 # ─────────────────────────────────────────────
 # Tmux: FZF session switcher
 # ─────────────────────────────────────────────
-#function tmux-fzf-switch
-#    ~/.config/tmux/scripts/tmux-session-switch.fish
-#end
+function tmux-fzf-switch
+    ~/.config/tmux/scripts/tmux-session-switch.fish
+end
 
 function tmux-fzf-project
     ~/.config/tmux/scripts/tmux-session-launch.fish
 end
 
 # Key bindings (optional)
-#bind \cf tmux-fzf-switch # Ctrl-f to switch sessions
+bind \cf tmux-fzf-switch # Ctrl-f to switch sessions
 bind \cp tmux-fzf-project # Ctrl-p to pick & start a project
 
 # ─────────────────────────────────────────────
