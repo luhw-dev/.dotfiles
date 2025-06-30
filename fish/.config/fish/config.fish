@@ -12,16 +12,6 @@ if not status is-interactive
 end
 
 # ─────────────────────────────────────────────
-# Auto-start tmux session
-# ─────────────────────────────────────────────
-if status --is-login
-    and not set -q TMUX
-    tmux has-session -t default 2>/dev/null
-    or tmux new-session -d -s default
-    tmux attach -t default
-end
-
-# ─────────────────────────────────────────────
 # PATH Setup
 # ─────────────────────────────────────────────
 set -gx PATH $PATH $HOME/.config/composer/vendor/bin
@@ -89,3 +79,6 @@ function grep_dotfiles_in_config
     # List matching directories in ~/.config
     ls ~/.config | grep -E "$pattern"
 end
+
+alias claude="/home/luhw/.claude/local/claude"
+alias screenshot="/home/luhw/scripts/screenshot.sh"

@@ -18,11 +18,11 @@
   ],
   "hyprland/workspaces": {
     // "show-special": true,
-    "format": "{name}:{icon}",
+    "format": "{name}",
     "format-icons": {
-      "urgent": "[!]",
-      "default": "[]",
-      "active": "[*]"
+      "urgent": "",
+      "default": "",
+      "active": ""
     }
   },
   "tray": {
@@ -49,6 +49,7 @@
     "format-disabled": "󰤮 No Interface",
     "tooltip-format": "{ifname}: {signalStrength}% {bandwidthDownBits}",
     "interval": 5,
+    "on-click": "~/.local/bin/foot-floating-nmtui",
     "tooltip": true,
     "format-icons": [
       "󰤯",

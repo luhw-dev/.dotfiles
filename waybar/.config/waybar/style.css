@@ -9,7 +9,7 @@
 }
 
 #waybar {
-    background: @base;
+    background: transparent;
     margin: 0px;
     padding: 0px;
 }
@@ -23,7 +23,6 @@
 #workspaces {
     border-radius: 0px;
     margin: 0px;
-    border: 1px solid rgba(255, 255, 255, 0.05);
 }
 
 #workspaces button {
@@ -33,14 +32,14 @@
 }
 
 #workspaces button.active {
-    background: @overlay;
+    background: transparent;
     color: @iris;
 
 }
 
 #workspaces button:hover {
     color: @rose;
-    background: @surface;
+    background: transparent;
 
 }
 
@@ -55,11 +54,10 @@
 #memory,
 #custom-lock,
 #custom-power {
-    background: @base;
+    background: transparent;
     color: @text;
     padding-left: 0.5rem;
     padding-right: 0.5rem;
-    border: 1px solid rgba(255, 255, 255, 0.05);
 }
 
 #network.disconnected {
