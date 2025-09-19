@@ -9,13 +9,13 @@
 }
 
 #waybar {
-    background: transparent;
+    background: @base;
     margin: 0px;
     padding: 0px;
 }
 
 #window {
-    color: @rose;
+    color: @text;
     margin-left: 10px;
     padding: 0px;
 }

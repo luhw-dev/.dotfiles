@@ -184,4 +184,6 @@ configuration {
 
 //@theme "/usr/share/rofi/themes/dmenu.rasi"
 
-@theme "/usr/share/rofi/themes/Arc-Dark.rasi"
+//@theme "/usr/share/rofi/themes/Arc-Dark.rasi"
+
+@theme "/home/luhw/.local/share/rofi/themes/rounded-gray-dark.rasi"

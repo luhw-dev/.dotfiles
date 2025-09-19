@@ -29,6 +29,10 @@
     "icon-size": 16,
     "spacing": 10
   },
+  "hyprland/window": {
+    "max-length": 30,
+    "show-focused-workspace-name": true
+  },
   "custom/music": {
     "format": "  {}",
     "escape": true,
